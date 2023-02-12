@@ -76,3 +76,16 @@ a {
     border-radius: 28px;
     box-shadow: 1px 2px 4px 0px hsl(300deg 4% 4% / 53%);
 }
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.icon {
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
