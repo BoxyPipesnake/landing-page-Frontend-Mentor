@@ -41,6 +41,7 @@ a {
 
 .main-container {
     margin: 2rem;
+    max-width: 900px;
 }
 
 .logo-container {
@@ -51,12 +52,36 @@ a {
     margin-top: 3rem;
 }
 
+@media (min-width: 768px) {
+    
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+}
+
 .info {
     margin-top: 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .info {
+        margin-top: 2rem;
+        text-align: left;
+        margin-left: 2rem;
+    }
 }
 
 .info .main-heading {
@@ -77,6 +102,15 @@ a {
     box-shadow: 1px 2px 4px 0px hsl(300deg 4% 4% / 53%);
 }
 
+@media (min-width: 768px) {
+
+    .btn {
+        width: 40%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
 .icons {
     display: flex;
     justify-content: center;
@@ -84,8 +118,15 @@ a {
     padding-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+    .icons {
+        justify-content: end;
+        padding-bottom: 0;
+    }
+}
+
 .icon {
-    padding: 1rem;
+    padding: 0.5rem;
     border: 1px solid white;
     border-radius: 50%;
 }
